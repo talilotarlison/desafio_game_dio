@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Meu Heroi</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1>Qual o nivel do seu Heroi?</h1>
+      <form>
+      <div class="dados_nome box">
+        <p>Qual seu Nome?</p>
+        <input type="text" id="nome" minlength="1" maxlength="50" placeholder="Insira o nome do Heroi!"></input>
+        <button onclick="showSexo()">Avançar</button>
+      </div>
+   
+      <div class="dados_sexo box">
+          <p>Qual seu Sexo?</p>
+          <div>
+              <input type="radio" id="sexo_M" name="sexo" value="Masculino" />
+              <label for="sexo_M">Masculino</label>
+          </div>
+          <div>
+             <input type="radio" id="sexo_F" name="sexo" value="Feminino"/>
+             <label for="sexo_F">Feminino</label>
+          </div>
+          <button onclick="showXP()">Avançar</button>
+      </div>
+      
+      <div class="dados_xp box">
+        <p>Qual seu XP?</p>
+        <input type="number" id="xp" placeholder="Experiência do heroi!" required></input>
+        <button onclick="showResultado()">Avançar</button>
+      </div>
+      </form>
+
+      <div class="dados_mostrar box">
+          <p>Resultado:</p>
+          <div id="mostra_resultado"></div>
+      </div>
+     
+      <script src="script.js"></script>
+  </body>
+</html>
