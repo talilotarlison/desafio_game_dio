@@ -1,5 +1,9 @@
-//canselar envio do formulario
+//Links de referencia:
+
 //https://cursos.alura.com.br/forum/topico-submit-form-sem-refresh-e-sem-preventdefault-109794
+//https://www.freecodecamp.org/portuguese/news/o-metodo-location-reload-como-recarregar-uma-pagina-em-javascript/
+
+//cancelar envio do formulario
 const form = document.getElementById('some-form');
 form.addEventListener('submit', e => {
     e.preventDefault();
