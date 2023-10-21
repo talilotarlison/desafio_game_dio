@@ -28,12 +28,12 @@ class Heroi {
          return  "PRATA";
      }else if(this.xp > 6001 && this.xp <= 7000){
          return  "OURO";
-     }else if(this.xp > 7001 && this.xp <= 8.000){
+     }else if(this.xp > 7001 && this.xp <= 8000){
          return  "PLATINA";
      }else if(this.xp > 8001 && this.xp <= 9000){
          return  "ASCENDENTE";
      }else if(this.xp > 9001 && this.xp < 10000){
-         return  "PLATINA";
+         return  "IMORTAL";
      }else{
         return  "RADIANTE";
      }
